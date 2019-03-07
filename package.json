@@ -1,0 +1,32 @@
+{
+  "name": "vue-ssr",
+  "version": "1.0.0",
+  "description": "- この 実践 - Vue.js SSR では、Vue.js + Node.js(Express)でSSR環境を構築していきます。\r - [参考](https://github.com/nkzttt/vue-ssr-test/blob/master/guide/ja.md)",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node app",
+    "build:prod": "webpack -p --config=webpack.client.config.js && webpack -p --config=webpack.server.config.js",
+    "build:dev": "webpack --mode=development --config=webpack.client.config.js && webpack --mode=development --config=webpack.server.config.js"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "@babel/core": "^7.3.4",
+    "@babel/preset-env": "^7.3.4",
+    "babel-loader": "^8.0.5",
+    "css-loader": "^2.1.0",
+    "vue-loader": "^15.7.0",
+    "vue-style-loader": "^4.1.2",
+    "vue-template-compiler": "^2.6.8",
+    "webpack": "^4.29.6",
+    "webpack-cli": "^3.2.3"
+  },
+  "dependencies": {
+    "express": "^4.16.4",
+    "vue": "^2.6.8",
+    "vue-router": "^3.0.2",
+    "vue-server-renderer": "^2.6.8"
+  }
+}
